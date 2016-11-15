@@ -1,6 +1,6 @@
-FROM nginx:1.11.1-alpine
+FROM nginx:1.11.5-alpine
 
-ENV VERSION=v6.4.0 NPM_VERSION=3
+ENV VERSION=v6.9.1 NPM_VERSION=3
 ENV CONFIG_FLAGS="--fully-static" DEL_PKGS="libgcc libstdc++" RM_DIRS=/usr/include
 
 RUN apk add --no-cache curl make gcc g++ python linux-headers paxctl libgcc libstdc++ gnupg && \
